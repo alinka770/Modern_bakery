@@ -10,28 +10,29 @@
     <body>
         <header>
             <div class="container">
-                <nav>
-                    <a href="/">
-                        <img src="./images/logo.svg" alt="Logo Modern bakery" />
-                    </a>
-                    <ul>
-                        <li><a class="link" href="#traditions-section">Our traditions</a></li>
-                        <li><a class="link" href="#chef-section">Chefs</a></li>
-                        <li><a class="link" href="#formats-section">Formats</a></li>
-                        <li><a class="link" href="#contacts-section">Contacts</a></li>
-                    </ul>
-                    <button class="button" type="button">Order a call</button>
-                </nav>
+                <div class="header-container">
+                    <nav class="header-nav">
+                        <a href="/">
+                            <img src="./images/logo.svg" alt="Logo Modern bakery" />
+                        </a>
+                        <ul class="header-menu">
+                            <li><a class="link" href="#traditions-section">Our traditions</a></li>
+                            <li><a class="link" href="#chef-section">Chefs</a></li>
+                            <li><a class="link" href="#formats-section">Formats</a></li>
+                            <li><a class="link" href="#contacts-section">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <button class="button modal-btn-open" type="button">Request a callback</button>
+                </div>
             </div>
         </header>
-
         <main>
             <section class="hero-section">
                 <div class="container">
                     <h1 class="hero-title"><span class="accent">Modern</span> bakery</h1>
                 </div>
             </section>
-            <section>
+            <section class="advantages-section">
                 <div class="container">
                     <h2 class="visually-hidden">Our advantages</h2>
                     <ul class="advantages-list">
@@ -43,38 +44,54 @@
             </section>
             <section class="section traditions-section" id="traditions-section">
                 <div class="container">
-                    <h2 class="section-title traditions-title">A new format of traditions</h2>
-                    <p class="traditions-text">
-                        <span class="brand uppercase">Shop bakery</span> — is a bakery that took all the best and preserved the taste of traditional pastries and the naturalness of the ingredients.
-                    </p>
-                    <p class="traditions-text">
-                        We work as the most famous networks—
-                        <span class="brand">5 minutes and the order is ready.</span>
-                        And our bakeries have a stylish design and high quality service!
-                    </p>
-                    <img src="./images/1.jpg" alt="Baker man looking at loaves with a smile" />
+                    <div class="traditions-container">
+                        <div class="traditions-content">
+                            <h2 class="section-title traditions-title">A new format of traditions</h2>
+                            <p class="traditions-text">
+                                <span class="brand uppercase">Shop bakery</span> — is a bakery that took all the best and preserved the taste of traditional pastries and the naturalness of the
+                                ingredients.
+                            </p>
+                            <p class="traditions-text limited">
+                                We work as the most famous networks—
+                                <span class="brand">5 minutes and the order is ready.</span>
+                                And our bakeries have a stylish design and high quality service!
+                            </p>
+                        </div>
+                        <img src="./images/man-with-a-loaves.jpg" alt="Baker man looking at loaves with a smile" />
+                    </div>
                 </div>
             </section>
             <section class="section" id="chef-section">
                 <div class="container">
-                    <h2 class="section-title chefs-title">Our best <span class="accent">chefs</span></h2>
-                    <ul>
-                        <li>
-                            <img src="./images/2.jpg" alt="Girl chef with a croissant on a plate is smiling" />
-                            <article>
-                                <h3 class="chef-title">Nastya</h3>
-                                <p>Hello, I'm Nastya!</p>
-                                <p>For 10 years, I've been lighting interesting and tasty ideas in life.</p>
-                                <p>I will bake for you the most delicious products!</p>
+                    <h2 class="section-title chefs-title centered">Our best <span class="accent">chefs</span></h2>
+                    <ul class="chefs-list">
+                        <li class="chefs-item">
+                            <article class="chef-card">
+                                <img class="chef-photo" src="./images/nastya-chef.jpg" alt="Nastya chef with a croissant on a plate is smiling" />
+                                <div class="chef-content-text">
+                                    <h3 class="chef-title">Nastya</h3>
+                                    <div class="chef-text">
+                                        <p>Hello, I'm Nastya!</p>
+                                        <p>
+                                            For 10 years, I've been lighting<br />
+                                            interesting and tasty ideas in life.
+                                        </p>
+                                        <p>I will bake for you the most delicious products!</p>
+                                    </div>
+                                </div>
                             </article>
                         </li>
-                        <li>
-                            <img src="./images/3.jpg" alt="Bald male chef in white gloves prepares fish" />
-                            <article>
-                                <h3 class="chef-title">Vlad</h3>
-                                <p>Hello, I'm Vlad!</p>
-                                <p>I have 18 years of coding experience. SHOP BAKERY is our love, which we share with you every time through our pastries!</p>
-                                <p>I will make a unique filling for you for any taste!</p>
+                        <li class="chefs-item">
+                            <article class="chef-card">
+                                <img class="chef-photo" src="./images/vlad-chef.jpg" alt="Vlad chef in white gloves prepares fish" />
+                                <div>
+                                    <h3 class="chef-title">Vlad</h3>
+                                    <div class="chef-text">
+                                        <p>Hello, I'm Vlad!</p>
+                                        <p>I have 18 years of coding experience. SHOP BAKERY is our love, which we share with you every time through our pastries!</p>
+                                        <p>I will make a unique filling for you for any taste!</p>
+                                    </div>
+                                </div>
                             </article>
                         </li>
                     </ul>
@@ -82,97 +99,165 @@
             </section>
             <section class="section" id="formats-section">
                 <div class="container">
-                    <h2 class="section-title formats-title">Formats</h2>
-                    <ul>
-                        <li>
-                            <article>
-                                <h3 class="format-title">Walrus</h3>
-                                <div class="format-text">
-                                    <p>Area: up to 120 m2</p>
-                                    <p>Menu: extended menu</p>
-                                    <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 waiters-handymen</p>
-                                    <p>Seats: available</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3 class="format-title">Horseshoe</h3>
-                                <div class="format-text">
-                                    <p>Area: up to 25 m2</p>
-                                    <p>Menu: the most popular menu items</p>
-                                    <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
-                                    <p>Seats: none</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <h3 class="format-title">Handlebar</h3>
-                                <div class="format-text">
-                                    <p>Area: up to 15 m2</p>
-                                    <p>Menu: the most popular menu items</p>
-                                    <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
-                                    <p>Seats: none</p>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
+                    <h2 class="section-title formats-title centered">Formats</h2>
+                    <div class="formats-container">
+                        <button class="carousel-button" type="button">
+                            <svg width="16" height="16">
+                                <use href="./images/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                        <ul class="formats-list">
+                            <li class="formats-item">
+                                <article class="format-card">
+                                    <h3 class="format-title">Walrus</h3>
+                                    <div class="format-text">
+                                        <p>Area: up to 120 m2</p>
+                                        <p>Menu: extended menu</p>
+                                        <p>Staff: 2 cashiers, 2 bakers, 2 baker's assistants, 2 waiters-handymen</p>
+                                        <p>Seats: available</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats-item">
+                                <article class="format-card">
+                                    <h3 class="format-title">Horseshoe</h3>
+                                    <div class="format-text">
+                                        <p>Area: up to 25 m2</p>
+                                        <p>Menu: the most popular menu items</p>
+                                        <p>Staff: 2 cashiers, 2 bakers, 1 baker's assistant</p>
+                                        <p>Seats: none</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats-item">
+                                <article class="format-card">
+                                    <h3 class="format-title">Handlebar</h3>
+                                    <div class="format-text">
+                                        <p>Area: up to 15 m2</p>
+                                        <p>Menu: the most popular menu items</p>
+                                        <p>Staff: 1 seller, 1 baker, 1 baker's assistant</p>
+                                        <p>Seats: none</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <button class="carousel-button" type="button">
+                            <svg class="right" width="16" height="16">
+                                <use href="./images/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </section>
-            <section class="section" id="contacts-section">
+            <section class="section contacts-section" id="contacts-section">
                 <div class="container">
-                    <h2 class="section-title contacts-title">Join the network of bakeries</h2>
-                    <p>Fill out the form so we can contact you!</p>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.843178995945!2d34.739263799999996!3d32.01936140000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b3198bcdd863%3A0x44f7201e9969bc4e!2sDerech%20Ben%20Gurion%2081%2C%20Bat%20Yam!5e0!3m2!1sen!2sil!4v1732567272077!5m2!1sen!2sil"
-                        max-width="603"
-                        width="100%"
-                        height="595"
-                        style="border: 0"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                    <div class="contacts-container">
+                        <div class="contact-form">
+                            <h2 class="section-title contacts-title">Join the network of bakeries</h2>
+                            <p>Fill out the form so we can contact you!</p>
+                            <form name="contact-form" autocomplete="off">
+                                <div class="form-field">
+                                    <label class="form-label visually-hidden" for="user-name">Name</label>
+                                    <input class="form-input" id="user-name" name="user-name" placeholder="Name" type="text" />
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label visually-hidden" for="user-phone_number">Phone number</label>
+                                    <input class="form-input" type="tel" id="user-phone_number" placeholder="Phone number" name="user-phone-number" />
+                                </div>
+                                <div class="form-field">
+                                    <label class="form-label visually-hidden" for="user-email">Email</label>
+                                    <input class="form-input" type="email" id="user-email" placeholder="Email" name="user-email" />
+                                </div>
+                                <button class="button submit-button" type="submit">Request a callback</button>
+                                <p class="form-terms">By clicking the button I agree to the <a class="privacy-link" href="#">privacy policy</a></p>
+                            </form>
+                        </div>
+                        <iframe
+                            class="contact-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3382.843178995945!2d34.739263799999996!3d32.01936140000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502b3198bcdd863%3A0x44f7201e9969bc4e!2sDerech%20Ben%20Gurion%2081%2C%20Bat%20Yam!5e0!3m2!1sen!2sil!4v1732567272077!5m2!1sen!2sil"
+                            width="603px"
+                            height="595"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <div class="container">
-                <nav>
-                    <a href="/">
-                        <img src="./images/logo.svg" alt="Logo Modern bakery" />
-                    </a>
-                    <ul>
-                        <li><a class="link" href="#traditions-section">Our traditions</a></li>
-                        <li><a class="link" href="#chef-section">Chefs</a></li>
-                        <li><a class="link" href="#formats-section">Formats</a></li>
-                        <li><a class="link" href="#contacts-section">Contacts</a></li>
-                    </ul>
-                </nav>
-                <address>
-                    <ul>
-                        <li><a class="address-link" href="tel:+972500000000">+972500000000</a></li>
-                        <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                        <li>
-                            <a class="address-link" href="https://maps.app.goo.gl/KrqnRZQcfsSTqrsZA">Derech Ben Gurion 81, Bat Yam</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <!--facebook icon-->
+                <div class="footer-container">
+                    <nav class="footer-nav">
+                        <div class="logo-footer">
+                            <a href="/">
+                                <img src="./images/logo.svg" alt="Logo Modern bakery" />
                             </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <!--instagram icon-->
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- prettier-ignore -->
-                    <a class="address-link" href="#" target="_blank">Privacy Policy</a>
-                    <p class="address-copyright">&copy; 2024 Data protected</p>
-                </address>
+                        </div>
+                        <ul class="menu-footer">
+                            <li><a class="link" href="#traditions-section">Our traditions</a></li>
+                            <li><a class="link" href="#chef-section">Chefs</a></li>
+                            <li><a class="link" href="#formats-section">Formats</a></li>
+                            <li><a class="link contacts" href="#contacts-section">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <address class="footer-address">
+                        <ul class="address-info">
+                            <li><a class="address-link" href="tel:+972500000000">+972500000000</a></li>
+                            <li><a class="address-link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
+                            <li>
+                                <a class="address-link" href="https://maps.app.goo.gl/KrqnRZQcfsSTqrsZA">Derech Ben Gurion 81, Bat Yam</a>
+                            </li>
+                            <div class="social-media">
+                                <li>
+                                    <a href="#">
+                                        <svg class="address-icon" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-facebook-logo"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <svg class="address-icon" width="32" height="32">
+                                            <use href="./images/icons.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                        <!-- prettier-ignore -->
+                        <div class="address-link-copyright">
+                            <a class="address-link" href="#" target="_blank">Privacy Policy</a>
+                            <p class="address-copyright">&copy; 2024 Data protected</p>
+                        </div>
+                    </address>
+                </div>
             </div>
         </footer>
+        <div class="backdrop">
+            <div class="modal">
+                <button class="modal-btn-close" type="button">Close</button>
+                <h2>Request a callback</h2>
+                <p>Leave a request and our specialist will contact you!</p>
+                <form name="order-call-form" autocomplete="off">
+                    <div class="form-field">
+                        <label class="form-label visually-hidden" for="user-name">Name</label>
+                        <input class="form-input" id="user-name" name="user-name" placeholder="Name" type="text" />
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label visually-hidden" for="user-phone_number">Phone number</label>
+                        <input class="form-input" type="tel" id="user-phone_number" placeholder="Phone number" name="user-phone-number" />
+                    </div>
+                    <div class="form-field">
+                        <label class="form-label visually-hidden" for="user-email">Email</label>
+                        <input class="form-input" type="email" id="user-email" placeholder="Email" name="user-email" />
+                    </div>
+                    <button class="button submit-button" type="submit">Request a callback</button>
+                    <p class="form-terms">By clicking the button I agree to the <a class="privacy-link" href="#">privacy policy</a></p>
+                </form>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
