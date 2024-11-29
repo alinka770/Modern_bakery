@@ -1,0 +1,32 @@
+.button {
+    display: block;
+    padding: 16px 32px;
+    width: 238px;
+    height: 59px;
+    background-color: var(--color-brand-normal);
+    border: 2px solid var(--color-brand-normal);
+    border-radius: 8px;
+    color: var(--color-primary-light);
+    cursor: pointer;
+    font-weight: 600;
+
+    &.modal-btn-open{
+        margin-right: 90px;
+    }
+    
+    &:hover {
+        background-color: var(--color-primary-light);
+        color: var(--color-brand-dark);
+    }
+    
+    &:disabled {
+        background-color: lightgray;
+        color: gray;
+        border-color: currentColor;
+        cursor: not-allowed;
+    }
+}
+
+
+
+
