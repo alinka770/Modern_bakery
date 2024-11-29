@@ -1,0 +1,32 @@
+.button {
+    padding: 16px 32px;
+    width: 238px;
+    height: 59px;
+    background-color: var(--color-brand-normal);
+    border: 2px solid var(--color-brand-normal);
+    border-radius: 8px;
+    color: var(--color-primary-light);
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.button.modal-btn-open{
+    margin-right: 90px;
+}
+
+.button:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-brand-dark);
+}
+
+.button:disabled {
+    background-color: lightgray;
+    color: gray;
+    border-color: currentColor;
+    cursor: not-allowed;
+}
+
+.submit-button {
+    margin: 0 auto 24px;
+    display: block;
+}
